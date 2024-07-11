@@ -58,5 +58,15 @@ console.log(JSON.parse(str1))
 
 //Promise 
 
+// Modules import and export
+import {PI, add} from './utils'
+console.log(PI)
+console.log(add(2,3))
+
+//QuerySelector
+//Events
+//Arrow function
+//setTimeout vs steInterval
+
 
 
