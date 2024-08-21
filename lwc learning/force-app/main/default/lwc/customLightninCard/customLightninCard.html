@@ -5,21 +5,20 @@
                 <div class="slds-media__body">
                     <h2 class="slds-card__header-title">
                         <div class="slds-card__header-link slds-truncate">
-                            Header will come here
-                        </div>
+                                <slot name="title"></slot>
+                            </div>
                     </h2>
                 </div>
-                <div class="slds-no-flex">
-                    <button class="slds-button slds-button_neutral">Action</button>
-                </div>
+                    <div class="slds-no-flex">
+                        <slot name="actions"></slot>
+                    </div>
             </header>
         </div>
-            <div class="slds-card_body">
-                here body will come
-            </div>
-            <footer class="slds-card_footer">
-                here footer will come
-            </footer>
-        
-        </article>
+        <div class="slds-card__body slds-card__body_inner">
+            <slot></slot>
+        </div>
+        <footer class="slds-card__footer">
+            <slot name="footer"></slot>
+        </footer>
+    </article>
 </template>
