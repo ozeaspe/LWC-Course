@@ -4,23 +4,19 @@
     align-items: center;
     flex-direction: column;
 }
-
 .score-panel{
     text-align: left;
     margin-bottom: 12px;
 }
-
 .timer{
     display: inline-block;
-    margin: 0 1rem
+    margin: 0 1rem;
 }
-
 .restart{
     float: right;
     cursor: pointer;
     margin: 0px 8px;
 }
-
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -32,7 +28,6 @@
     border-radius: 4px;
     box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
 }
-
 .grid-container .card{
     height: 3.7rem;
 	width: 3.7rem;
@@ -47,7 +42,6 @@
 	align-items: center;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
-
 .grid-container .card.open{
     transform: rotateY(0);
     background: #02b3e4;
@@ -67,9 +61,22 @@
     opacity: 0.9;
 }
 
-
-
-
+.grid-container .card.match{
+    cursor: default;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+.grid-container .card.unmatched{
+    animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
 /*animations*/
 @keyframes flipInY {
 	from {
@@ -138,4 +145,3 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
-
