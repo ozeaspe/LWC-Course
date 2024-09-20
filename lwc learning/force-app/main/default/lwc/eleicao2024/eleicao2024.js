@@ -23,7 +23,9 @@ export default class Eleicao extends LightningElement {
                 })
                 .then((result) => {
                     this.resultados = Object.keys(result).map(candidato => {
-                        return { candidato, porcentagem: result[candidato] };
+                        return { 
+                                candidato, 
+                                porcentagem: (result[candidato]) };
                     });
                 })
                 .catch(error => {
