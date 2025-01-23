@@ -1,0 +1,117 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-02-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <div class="slds-card__body">
+    <lightning-card>
+      <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+        <lightning-accordion-section class="no-border-top" name="A" label="Plano Claro Total Individual - Regional: SPC - UF:SP - Grupo 1 - Linha 200 - Valor R$ 10,00">      
+          <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-left_xx-small">
+            <thead>
+              <tr class="slds-line-height_reset">
+              <th class="" scope="col">
+              <div class="slds-truncate">Linha</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate">Aparelhos</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate">Quantidade</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate">Pontos</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate">Valor</div>
+              </th>
+              </tr>
+              </thead>
+            <tbody>
+              <template for:each={dataDevice} for:item="list">
+                <tr key={id}>
+                    <td>{list.linha}</td>
+                    <td>{list.aparelhos}</td>
+                    <td>{list.quantidade}</td>
+                    <td>{list.pontos}</td>
+                    <td>{list.valor}</td>
+                </tr>
+            </template>
+            </tbody>
+                </table>
+        </lightning-accordion-section>
+        <lightning-accordion-section class="no-border-top" name="B" label="Plano Claro Total Individual - Regional: SPC - UF:SP - Grupo 2 - Linha 200 - Valor R$ 10,00">
+              <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-left_xx-small">
+                <thead>
+                  <tr class="slds-line-height_reset">
+                  <th class="" scope="col">
+                  <div class="slds-truncate">Linha</div>
+                  </th>
+                  <th class="" scope="col">
+                    <div class="slds-truncate">Aparelhos</div>
+                  </th>
+                  <th class="" scope="col">
+                    <div class="slds-truncate">Quantidade</div>
+                  </th>
+                  <th class="" scope="col">
+                    <div class="slds-truncate">Pontos</div>
+                  </th>
+                  <th class="" scope="col">
+                    <div class="slds-truncate">Valor</div>
+                  </th>
+                  </tr>
+                  </thead>
+            <tbody>
+              <template for:each={dataDevice} for:item="list">
+                <tr key={id}>
+                    <td>{list.linha}</td>
+                    <td>{list.aparelhos}</td>
+                    <td>{list.quantidade}</td>
+                    <td>{list.pontos}</td>
+                    <td>{list.valor}</td>
+                </tr>
+            </template>
+            </tbody>
+              </table> 
+      </lightning-accordion-section>
+      <lightning-accordion-section class="no-border-top" name="C" label="Plano Claro Total Individual - Regional: SPC - UF:SP - Grupo 3 - Linha 200 - Valor R$ 10,00">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-left_xx-small">
+                <thead>
+                <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                <div class="slds-truncate">Linha</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate">Aparelhos</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate">Quantidade</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate">Pontos</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate">Valor</div>
+                </th>
+                </tr>
+                </thead>
+                <tbody>
+                  <template for:each={dataDevice} for:item="list">
+                    <tr key={id}>
+                        <td>{list.linha}</td>
+                        <td>{list.aparelhos}</td>
+                        <td>{list.quantidade}</td>
+                        <td>{list.pontos}</td>
+                        <td>{list.valor}</td>
+                    </tr>
+                </template>
+                </tbody>
+            </table>  
+    </lightning-accordion-section>
+    </lightning-accordion>
+    </lightning-card>
+  </div>
+</template>

@@ -2,6 +2,25 @@ import { LightningElement } from 'lwc';
 
 export default class QuizApp extends LightningElement {
 
+    columnsTable=["Produto", "Valor",]
+    listTable=[
+        {
+            id:1,
+            carro:"Sandero",
+            valor:"30.000",
+        },
+        {
+            id:2,
+            carro:"Gol",
+            valor:"40.000",
+        },
+        {
+            id:3,
+            carro:"Palio",
+            valor:"20.000",
+        }
+    ]
+
     selected={} // for storing answers
     correctAnswers = 0 //to show the number of correct answers
     isSubmitted = false // use to show the result

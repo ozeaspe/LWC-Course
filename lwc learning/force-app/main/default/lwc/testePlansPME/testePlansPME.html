@@ -1,0 +1,107 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-02-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-card>
+  <lightning-accordion active-section-name="A">
+      <lightning-accordion-section name="A" label="Plano Claro Total Individual - Regional: SPC - UF:SP - Grupo 1 - Linha 200">
+        <div class="loop">
+          <template for:each={planoIndividualList} for:item="list">
+              <div key={id}>
+                  <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-7 slds-m-bottom_large">
+                        <p class="stylep">Tipo de Solicitação</p>
+                        <span class="stylespan">{list.tiposolicitacao}</span>
+                      </div>
+                      <div class="slds-col slds-size_1-of-7">
+                        <p class="stylep">Regional</p>
+                        <span>{list.regional}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">UF</p>
+                      <span>{list.uf}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">DDD</p>
+                      <span>{list.ddd}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">Qtd. Linha Total</p>
+                      <span>{list.qtdLinhaTotal}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">Total do Plano</p>
+                      <span>{list.totalPlano}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">Grupo</p>
+                      <span>{list.grupo}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7" >
+                      <p class="stylep">Conta de Faturamento</p>
+                      <span>{list.contaFaturamento}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-7">
+                      <p class="stylep">Franquia 7G</p>
+                      <span>{list.franquia}</span>
+                    </div>
+                </div>   
+              </div>
+          </template>
+      </div>
+          </lightning-accordion-section>
+  </lightning-accordion>
+      <div class="slds-m-left_medium">
+          <p><strong>Bônus</strong></p>
+      </div>
+  <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-left_medium">
+      <thead>
+      <tr class="slds-line-height_reset">
+      <th class="" scope="col">
+      <div class="slds-truncate" title="Produto">Produto</div>
+      </th>
+      </tr>
+      </thead>
+          <tbody>
+          <tr class="slds-hint-parent">
+          <td data-label="">
+          <div class="slds-truncate" title="Bônus Extra">{dataBonus.bonusExtra}</div>
+          </td>
+          </tr>
+          <tr class="slds-hint-parent">
+          <td data-label="">
+          <div class="slds-truncate" title="Bonus">{dataBonus.bonus}</div>
+          </td>
+          </tr>
+          </tbody>
+  </table>
+
+  <div class="slds-m-left_medium slds-m-top_x-large">
+    <p><strong>Serviços Adicionais</strong></p>
+</div>
+  <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-left_medium">
+  <thead>
+    <tr class="slds-line-height_reset">
+      <th class="" scope="col">
+      <div class="slds-truncate">Produto</div>
+      </th>
+      <th class="" scope="col">
+        <div class="slds-truncate">Valor</div>
+      </th>
+    </tr>
+  </thead>
+          <tbody>
+            <template for:each={listTable} for:item="list">
+              <tr key={id}>
+                  <td>{list.produto}</td>
+                  <td>{list.valor}</td>
+              </tr>
+          </template>
+          </tbody>
+  </table>  
+</lightning-card>
+</template>

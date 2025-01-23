@@ -1,0 +1,53 @@
+<template>
+  <lightning-card title="Contatos Administrador">
+       <div class="slds-m-around_medium">
+           <template for:each={contactAdminList} for:item="list">
+               <div key={id}>
+                   <div class="slds-grid slds-wrap">
+                       <div class="slds-col slds-size_1-of-7 slds-m-bottom_large">
+                         <p class="stylep">CPF</p>
+                         <span class="stylespan">{list.cpf}</span>
+                       </div>
+                       <div class="slds-col slds-size_1-of-7">
+                         <p class="stylep">Nome</p>
+                         <span>{list.nome}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Sobrenome</p>
+                       <span>{list.sobrenome}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Email</p>
+                       <span>{list.email}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Telefone Celular</p>
+                       <span>{list.telCelular}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Telefone Fixo</p>
+                       <span>{list.telFixo}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Telefone Comercial</p>
+                       <span>{list.telComer}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7" >
+                       <p class="stylep">Cargo</p>
+                       <span>{list.cargo}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Representante</p>
+                       <span>{list.representante}</span>
+                     </div>
+                     <div class="slds-col slds-size_1-of-7">
+                       <p class="stylep">Representante Cartão de Crédito(Aparelho)</p>
+                         <span>{list.repCartCred}</span>
+                   </div>
+                   </div>
+                   <div class="slds-border_bottom slds-p-top_medium slds-p-bottom_medium"></div>    
+               </div>
+           </template>
+       </div>
+   </lightning-card>
+</template>

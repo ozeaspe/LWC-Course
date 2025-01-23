@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-30-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+      <template for:each={cartInfoList} for:item="cartInfo">
+        <div key={cartInfo}>
+        <table class="slds-table slds-table_bordered slds-table_col-bordered 
+        slds-border_left slds-border_right slds-m-left_medium">
+            <thead>
+                <tr style="height: 80px;">
+                  <td style="width: 250px;">
+                    <p class="slds-p-top_small slds-m-bottom_xx-small">Tipo de Venda</p>
+                    <span>{cartInfo.tipoVenda}</span>
+                  </td>
+                  <td class="" style="width: 250px;">
+                    <p class="slds-p-top_small slds-m-bottom_xx-small">Linha</p>
+                    <span>{cartInfo.linha}</span>
+                  </td>
+                  <td style="width: 250px;">
+                    <p class="slds-p-top_small slds-m-bottom_xx-small">Valor dos Serviços</p>
+                    <span>{cartInfo.valorServicos}</span>
+                  </td>
+                  <td style="width: 250px;">
+                    <p class="slds-p-top_small slds-m-bottom_xx-small">Aparelhos</p>
+                    <span>{cartInfo.aparelhos}</span>
+                  </td>
+                  <td style="width: 250px;">
+                    <p class="slds-p-top_small slds-m-bottom_xx-small">Valor dos Aparelhos</p>
+                    <span>{cartInfo.valorAparelhos}</span>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </template>
+    </lightning-card>
+</template>

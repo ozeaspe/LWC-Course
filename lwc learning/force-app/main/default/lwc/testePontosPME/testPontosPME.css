@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stylep{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.stylespan{
+    margin-top: 50px;
+}

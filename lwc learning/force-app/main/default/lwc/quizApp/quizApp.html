@@ -43,4 +43,26 @@
             </template>
         </div>
     </lightning-card>
+
+    <lightning-card title="Client Side Filtering Demo">
+        <div class="slds-p-around_medium">
+            <table>
+                <thead>
+                    <tr>
+                        <template for:each={columnsTable} for:item="columns">
+                            <th key={columns}>{columns}</th>
+                        </template>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={listTable} for:item="list">
+                        <tr key={id}>
+                            <td>{list.carro}</td>
+                            <td>{list.valor}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
 </template>

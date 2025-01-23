@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-26-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Teste de componenetes" icon-name="custom:custom63">
+       <div class="slds-m-around_medium">
+           <template if:true={contact.data}>
+            <lightning-datatable 
+                key-field="Id"
+                data={contact.data}
+                columns={columns}
+                onsave={handleSave}
+                draft-values={draftValues}></lightning-datatable>
+            </template>
+       </div>
+    </lightning-card>
+</template>

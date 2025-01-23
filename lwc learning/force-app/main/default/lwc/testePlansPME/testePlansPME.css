@@ -1,0 +1,26 @@
+.stylep{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.stylespan{
+    margin-top: 30px;
+}
+
+.loop{
+    margin-left: 5px;
+}
+
+.slds-table{
+    width: 97%;
+}
+
+@media (max-width: 768px) {
+    .slds-table{
+        width: 95%;
+    }
+
+    .slds-grid{
+        width: 100%;
+    }
+}
